@@ -1,0 +1,26 @@
+-- --------------------------------------------------------------------------------
+-- Routine DDL
+-- Note: comments before and after the routine body will not be stored by the server
+-- --------------------------------------------------------------------------------
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `pos_candidato_leg_function`(numCandidatoParam int, idLegenda int, idEleicaoParam int) RETURNS int(11)
+BEGIN
+	DECLARE qtd_legenda int;
+	DECLARE pos_legenda int;
+	DECLARE i int default 0;
+	set @i = 0;
+
+	set @pos_legenda = (
+		SELECT count(*) as qtd, c.nome, p.sigla, c.numero, c.cargo, l.nome as legenda
+		FROM urnaiac.ticket t 
+		inner join candidato c on (c.numero = t.numVereador and t.numVereador = numCandidatoParam) or c.numero = t.numPrefeito
+		inner join partido p on p.numero = c.numPartido
+		inner join coligacao l on l.id = p.idColigacao and l.id = idLegenda
+		inner join eleitor e on e.idUsuario = t.idEleitor
+		inner join eleicao el on t.idEleicao and el.id = idEleicaoParam
+		group by c.numero, c.cargo);
+
+RETURN 1;
+
+END

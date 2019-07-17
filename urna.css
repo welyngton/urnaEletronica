@@ -1,0 +1,149 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  margin: 40px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-eleitor-cadastro {
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-eleitor-pesquisa {
+  max-width: 800px;
+  margin: 10px 0px 20px 0px;
+}
+
+.form-urna{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+.form-votacao{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-coligacao{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-partido{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-candidato{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-apuracao{
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.form-ticket {
+  max-width: 800px;
+  margin: 20px 0px 20px 0px;
+}
+
+.thumbnail{
+    width: 171px;
+    height: 180px;
+    pointer-events: none;
+    cursor: default;	
+}
+
+.thumbnailVoto{
+    width: 100px;
+    height: 75px;
+    pointer-events: none;
+    cursor: default;	
+}
+
+/**
+ * Extra large button extensions. Extends `.btn`.
+ */
+.btn-xlarge {
+    padding: 18px 28px;
+	margin: 5px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.row div .btn-lg{
+	margin: 5px;
+}
+
+.avisoVoto {
+	font-size:12px;
+}
+
+.labelAvisoVoto{
+	margin: 10px;
+}
+
+.input-group input {
+	min-width:30px;
+}
+
+.row .col-md-7 , .row .col-md-5{
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.click {
+	display: none;
+}
+
+.fimVotacao {
+  padding-left: 65px;
+  padding-top: 65px;
+  font-size: 130px;
+}
+
+.ticketLink {
+padding-left: 65px;
+font-size: 20px;
+ }
